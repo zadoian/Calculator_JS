@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator with Memory and Percentage Functions</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="calculator">
+        <input id="box" type="text" readonly>
+        <div id="memoryDisplay">Memory: 0</div>
+        <div class="button-container">
+            <button class="memory-button" onclick="memoryClear()">MC</button>
+            <button class="memory-button" onclick="memoryRecall()">MR</button>
+            <button class="memory-button" onclick="memoryAdd()">M+</button>
+            <button class="memory-button" onclick="memorySubtract()">M-</button>
+            <button class="clear-button" onclick="clearInput()">C</button>
+            <button onclick="clearEntry()">CE</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button class="operator" onclick="inputSymbol('/')">/</button>
+            <button onclick="inputDigit(7)">7</button>
+            <button onclick="inputDigit(8)">8</button>
+            <button onclick="inputDigit(9)">9</button>
+            <button class="operator" onclick="inputSymbol('*')">*</button>
+            <button onclick="inputDigit(4)">4</button>
+            <button onclick="inputDigit(5)">5</button>
+            <button onclick="inputDigit(6)">6</button>
+            <button class="operator" onclick="inputSymbol('-')">-</button>
+            <button onclick="inputDigit(1)">1</button>
+            <button onclick="inputDigit(2)">2</button>
+            <button onclick="inputDigit(3)">3</button>
+            <button class="operator" onclick="inputSymbol('+')">+</button>
+            <button onclick="inputDigit(0)" class="wide">0</button>
+            <button onclick="inputSymbol('.')">.</button>
+            <button class="operator" onclick="calculateResult()">=</button>
+            <button onclick="calculateSquareRoot()">√</button>
+            <button onclick="calculateSquare()">x²</button>
+            <button onclick="calculateReciprocal()">1/x</button>
+            <button onclick="calculatePercentage()">%</button>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Link to external JS file -->
+</body>
+</html>

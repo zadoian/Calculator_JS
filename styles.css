@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    margin: 0;
+}
+.calculator {
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 360px;
+}
+#box {
+    width: calc(95% - 20px);
+    height: 100px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: #444;
+    color: #fff;
+    overflow-x: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#memoryDisplay {
+    width: calc(95% - 20px);
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: #666;
+    color: #fff;
+    overflow-x: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #777;
+}
+button:active {
+    background-color: #999;
+}
+button.wide {
+    grid-column: span 2;
+}
+button.operator {
+    background-color: #0fd308;
+}
+button.operator:hover {
+    background-color: #16a709;
+}
+.memory-button {
+    background-color: #f57c00;
+}
+.memory-button:hover {
+    background-color: #ff9800;
+}
+.clear-button {
+    background-color: #ff4c4c; /* Red background for the "C" button */
+}
+.clear-button:hover {
+    background-color: #ff3333;
+}
